@@ -8,7 +8,7 @@ This repository is composed by a simple javascript app.
 You can start a simple webserver in the directory root, or just open the `index.thml` file in your Chrome browser and you are good to go! (or use the online demo with the link just bellow)
 
 ### Online Demo
-https://github.com/CaptainYouz/disjointed-intervals-manager/tree/gh-pages
+https://captainyouz.github.io/disjointed-intervals-manager/
 
 ### Example
 ```
