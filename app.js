@@ -1,10 +1,10 @@
-let _intervals = [];
+var _intervals = [];
 
 /**
  * Get back input value, change them to integer, and verify their validity.
  */
 function _getAndCheckValues() {
-  let values = {
+  var values = {
     from: parseInt(document.getElementById('from').value),
     to: parseInt(document.getElementById('to').value)
   };
@@ -16,10 +16,10 @@ function _getAndCheckValues() {
   return values;
 }
 
-function add(from, to) {
-  let values          = _getAndCheckValues();
-  let newIntervalList = [];
-  let hasBeenAdded    = false;
+function addInterval() {
+  var values          = _getAndCheckValues();
+  var newIntervalList = [];
+  var hasBeenAdded    = false;
 
   if (values) {
     if (!_intervals.length) newIntervalList.push([values.from, values.to]);
@@ -56,10 +56,10 @@ function add(from, to) {
   }
 }
 
-function remove() {
-  let values          = _getAndCheckValues();
-  let newIntervalList = [];
-  let newInterval     = '';
+function removeInterval() {
+  var values          = _getAndCheckValues();
+  var newIntervalList = [];
+  var newInterval     = '';
 
   if (values) {
     _intervals.forEach(function(interval) {
